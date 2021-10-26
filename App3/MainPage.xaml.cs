@@ -67,6 +67,7 @@ namespace App3
 
 
             }
+            //jjjj
             catch (Exception ex)
             {
                 DisplayAlert("MENSAJE DE ALERTA", ex.Message, "ok");
