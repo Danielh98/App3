@@ -4,9 +4,16 @@
              x:Class="App3.ViewDos">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label Text="LOGIN"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+
+            <Entry x:Name="txtUsuario" Placeholder="Ingrese usuario"/>
+            <Entry x:Name="txtContraseña" Placeholder="Ingrese la contraseña" IsPassword="True" />
+
+            <Button x:Name="btnAbrir" Text="Ingresar" Clicked="btnAbrir_Clicked"/>
+
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

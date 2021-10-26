@@ -10,7 +10,8 @@ namespace App3
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new ViewDos();
+            MainPage = new NavigationPage(new ViewDos());
         }
 
         protected override void OnStart()

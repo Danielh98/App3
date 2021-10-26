@@ -10,9 +10,14 @@ namespace App3
 {
     public partial class MainPage : ContentPage
     {
-        public MainPage()
+        public MainPage(string usuario, string contraseña)
         {
             InitializeComponent();
+
+            lblusuario.Text = usuario;
+            lblcontrasena.Text = contraseña;
+            
+
         }
 
         private void btnMostrar_Clicked(object sender, EventArgs e)
@@ -67,7 +72,7 @@ namespace App3
 
 
             }
-            //jjjj
+            
             catch (Exception ex)
             {
                 DisplayAlert("MENSAJE DE ALERTA", ex.Message, "ok");
@@ -75,16 +80,6 @@ namespace App3
 
         }
 
-        private async void btnNewView_Clicked(object sender, EventArgs e)
-        {
-            try
-            {
-
-            } catch (Exception ex)
-            {
-
-            }
-
-        }
+       
     }
 }

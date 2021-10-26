@@ -2,11 +2,19 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App3.MainPage">
-
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="DEBER" HorizontalTextAlignment="Center" TextColor="White" FontSize="28"/>
+    <ScrollView>
+        <StackLayout>
+        
+        <Frame BackgroundColor="#2196F3" Padding="10" CornerRadius="0">
+            <Label Text="DEBER" HorizontalTextAlignment="Center" TextColor="White" FontSize="10"/>
         </Frame>
+
+        <Label Text="Usted ingreso como:" HorizontalTextAlignment="Center"/>
+        <Label x:Name="lblusuario" />
+        <Label x:Name="lblcontrasena" />
+     
+
+
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition/>
@@ -43,9 +51,9 @@
             
         </Grid>
         <Button x:Name="btnMostrar" Text="Calcular" Clicked="btnMostrar_Clicked"/>
-        <Button x:Name="btnNewView" Text="Ingresar" Clicked="btnNewView_Clicked"/>
 
-
+      
     </StackLayout>
+    </ScrollView>
 
 </ContentPage>
